@@ -1,0 +1,14 @@
+{
+  "name": "kafka_clickhouse_example",
+  "version": "1.0.0",
+  "description": "example of kafka nodejs clickhouse",
+  "main": "clickstream.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@im_vanich",
+  "license": "ISC",
+  "dependencies": {
+    "kafkajs": "^2.2.4"
+  }
+}
