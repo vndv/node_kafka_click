@@ -45,11 +45,11 @@ table for get data from kafka
 	detectedCorruption UInt8,
 	firstInSession UInt8,
 	userAgentName String
-) ENGINE = Kafka SETTINGS kafka_broker_list = 'kafka:9092',
+) ENGINE = Kafka SETTINGS kafka_broker_list = 'kafka:9093',
                           kafka_topic_list = 'clickstream',
                           kafka_group_name = 'clickstream_consumer_group_1',
-						  ettings kafka_thread_per_consumer = 1,
-						  kafka_num_consumers = 1;
+						  kafka_thread_per_consumer = 1,
+						  kafka_num_consumers = 1,
                           kafka_format = 'JSONEachRow';
 
 /*

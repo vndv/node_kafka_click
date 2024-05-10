@@ -4,7 +4,7 @@ const { Partitioners } = require("kafkajs");
 async function run(data) {
   try {
     const kafka = new Kafka({
-      clientId: "clickstream_test",
+      clientId: "clickstream",
       brokers: ["localhost:9093"],
     });
 
@@ -16,7 +16,7 @@ async function run(data) {
     console.log("Connected..");
 
     const result = await producer.send({
-      topic: "clickstream_test",
+      topic: "clickstream",
       messages: [
         {
           value: data,
